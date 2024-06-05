@@ -8,7 +8,10 @@ namespace BLL
 	// Kế thừa lớp GenericService mục BLL tầng Common. 
 	public class CategoryService : GenericService<CategoryResponse, Category>
 	{
-		// Khởi tạo đối tượng từ tầng DAL.
+		/*
+		 1. Từ tầng BLL gửi request đến DAL (qua lớp CategoryResponse).
+			- CategoryResponse sẽ truy vấn dữ liệu thông qua Model.
+		 */
 		private CategoryResponse categoryResponse;
 		public CategoryService()
 		{
@@ -19,7 +22,7 @@ namespace BLL
 		{
 			var singleRes = new SingleResponse();
 			singleRes.Data = _rep.Read(id);
-			return base.Read(id);
+			return singleRes;
 		}
 	}
 }

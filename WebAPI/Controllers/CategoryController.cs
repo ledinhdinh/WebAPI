@@ -9,7 +9,9 @@ namespace WebAPI.Controllers
 	[ApiController]
 	public class CategoryController : ControllerBase
 	{
-		// Khởi tạo đối tượng từ tầng BLL.
+		/*
+		 1. Controller tiếp nhận Request từ tầng Web -> BLL (qua lớp CategorySevice).
+		 */
 		private CategoryService categoryService;
 		public CategoryController() { categoryService = new CategoryService(); }
 		[HttpPost("get-by-id")]
