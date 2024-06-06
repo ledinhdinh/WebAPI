@@ -28,11 +28,11 @@ namespace WebAPI
 				Version = "v1",
 				Description = "Swashbuckle",
 				TermsOfService = new Uri("http://appointvn.com"),
-				Contact = new OpenApiContact
-				{
-					Name = "Trang Nguyen",
-					Email = "phuongtrang06@gmail.com"
-				},
+				//Contact = new OpenApiContact
+				//{
+				//	Name = "Trang Nguyen",
+				//	Email = "phuongtrang06@gmail.com"
+				//},
 				License = new OpenApiLicense
 				{
 					Name = "Apache 2.0",
@@ -45,11 +45,11 @@ namespace WebAPI
 				Version = "v2",
 				Description = "Swashbuckle",
 				TermsOfService = new Uri("http://appointvn.com"),
-				Contact = new OpenApiContact
-				{
-					Name = "Trang Nguyen",
-					Email = "phuongtrang06@gmail.com"
-				},
+				//Contact = new OpenApiContact
+				//{
+				//	Name = "Trang Nguyen",
+				//	Email = "phuongtrang06@gmail.com"
+				//},
 				License = new OpenApiLicense
 				{
 					Name = "Apache 2.0",
